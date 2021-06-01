@@ -3,6 +3,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        //напишите тут ваш код
+
+        int a,b;
+         a = 5;
+        b = 25;
+        String s= "Итого: ";
+        System.out.println (s+a+"+"+b+"="+(a+b));
     }
 }
