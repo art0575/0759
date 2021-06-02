@@ -13,7 +13,18 @@
 
 public class Main {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        String combinations[] = {"Мама", "Мыла", "Раму"};
+        for (int i = 0; i <combinations.length; i++) {
+            for (int j = 0;  j < combinations.length;j++) {
+                for (int k = 0; k < combinations.length ;k++) {
+                    if (i == j || j == k || k == i) {
+                        continue;
+                    }
+                    System.out.println(combinations[i] + combinations[j] + combinations[k]);
+                }
+            }
+
+        }
 
     }
 }
