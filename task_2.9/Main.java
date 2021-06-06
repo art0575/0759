@@ -4,7 +4,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        //напишите тут ваш код
-
+        int[] nums = {3,6,8,5,4,2};
+        String answr  = "Нет";
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 5) answr  = "Да";
+        }
+        System.out.println(answr);
     }
 }
