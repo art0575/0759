@@ -15,12 +15,12 @@
 
 public class Main {
     public static int min(int a, int b, int c, int d) {
-        //напишите тут ваш код
+        return min(min(a,b),min(c,d));
 
     }
 
     public static int min(int a, int b) {
-        //напишите тут ваш код
+        if(a<b) return a; else return b;
 
     }
 
