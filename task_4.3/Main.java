@@ -29,5 +29,6 @@ class Cat {
 
     public boolean fight(Cat anotherCat) {
         //напишите тут ваш код
+        
     }
 }
