@@ -13,8 +13,17 @@
 •	Если некий кот1 выигрывает у кота кот2, то кот2 должен проигрывать коту кот1.
 */
 
+
 public class Main {
     public static void main(String[] args) {
+        Cat blackCat = new Cat (4, 3, 5);
+        Cat whiteCat = new Cat (2, 4, 2);
+
+         System.out.println("blackCat "+blackCat.fight(whiteCat));
+         System.out.println("whiteCat "+whiteCat.fight(blackCat));
+
+
+
 
     }
 }
@@ -24,11 +33,20 @@ class Cat {
     public int weight;
     public int strength;
 
-    public Cat() {
+    public Cat (int age, int weight, int strength) {
+        this.age = age;
+        this.weight = weight;
+        this.strength = strength;
+
+
     }
 
     public boolean fight(Cat anotherCat) {
-        //напишите тут ваш код
-        
+        int criteria = 0;
+        if (age > anotherCat.age) criteria++; else criteria--;
+        if (weight > anotherCat.weight) criteria++; else criteria --;
+        if (strength > anotherCat.strength) criteria++; else criteria --;
+        return criteria>0;
+
     }
 }
