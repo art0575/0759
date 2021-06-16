@@ -14,10 +14,10 @@
 
 public class Main {
     public static void main(String[] args) {
-        Dog dog1 = new Dog(); // наследует и имя и возраст
-        Dog dog2 = new Dog(); // не наследует
-        Dog dog3 = new Dog(); // наследует имя
-        Dog dog4 = new Dog(); // наследует возраст
+        Dog dog1 = new Dog();
+        Dog dog2 = new Dog();
+        Dog dog3 = new Dog();
+        Dog dog4 = new Dog();
         dog2.setName("Мурзик");
         dog2.setAge(3);
         dog3.setAge(5);
