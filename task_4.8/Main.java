@@ -31,17 +31,39 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String command;
         while (true){
-            System.out.println("Введите команду");
-            command = scanner.nextLine();
-            if(command.equals("getFreeRooms")){
-                hotel.getFreeRooms();
-            }else if(command.equals("reserveRoom")){
+            System.out.println("Введите команду: ");
+            command = scanner.next();
+            if(command.equals("ShowRooms")){
+                hotel.showRooms();
+            }else if(command.equals("ShowFreeRooms")) {
+                hotel.showFreeRooms();
+            }else if(command.equals("ShowRoomsWC")){
+                hotel.showRoomsWC();
+            }else if(command.equals("ShowRoomsEat")){
+                hotel.showRoomsEat();
+            }else if(command.equals("ShowRoomsWF")){
+                hotel.showRoomsWF();
+            }else if(command.equals("ReserveRoom")){
                 System.out.print("Введите номер комнаты для бронирования: ");
-                byte roomNumber = (byte) scanner.nextInt();
+                byte roomNumber = scanner.nextByte();
                 hotel.reserveRoom(roomNumber);
-            }else if (command.equals("exit")){
-                break;
-            }
+            }else if(command.equals("ReleaseRoom")) {
+                System.out.println("Введите номер освобождаемой комнаты: ");
+                byte roomNumber = scanner.nextByte();
+                hotel.releaseRoom(roomNumber);
+            }else if(command.equals("ShowRoom")) {
+                System.out.println("Какую комнату отобразить подробно: ");
+                byte roomNumber = scanner.nextByte();
+                hotel.showRoom(roomNumber);
+            }else if(command.equals("ShowBedsRooms")) {
+                System.out.println("Для скольких человек нужна комната (1-3): ");
+                byte beds = scanner.nextByte();
+                hotel.ShowBedsRooms(beds);
+            }else if (command.equals("Help") || command.equals("help")){
+                System.out.println("Доступные команды: ShowRooms, ShowRoom, ShowFreeRooms, ShowRoomsWC, ShowRoomsEat, ShowRoomsWF, ReserveRoom, ReleaseRoom, ShowBedsRooms, Help, Exit");}
+            else if (command.equals("Exit") || command.equals("exit")){break;}
+            else System.out.println("Неизвестная команда. Список команд - help");
+            scanner.reset(); // чтобы очистить буфер ввода строки
         }
 
     }

@@ -2,15 +2,15 @@
 * 2) Номера (кол-во мест(1-3), сан.узел(есть/нет), питаение(есть/нет), wifi(есть/нет), свободен/занят)
  */
 public class Room {
-    private byte quantity;
+    private byte beds;
     private boolean wc;
     private boolean eat;
     private boolean wifi;
     private boolean isFree;
     private byte roomNumber;
 
-    public Room(byte quantity, boolean wc, boolean eat, boolean wifi,byte roomNumber) {
-        this.quantity = quantity;
+    public Room(byte beds, boolean wc, boolean eat, boolean wifi,byte roomNumber) {
+        this.beds = beds;
         this.wc = wc;
         this.eat = eat;
         this.wifi = wifi;
@@ -23,8 +23,8 @@ public class Room {
         return roomNumber;
     }
 
-    public byte getQuantity() {
-        return quantity;
+    public byte getBeds() {
+        return beds;
     }
 
     public boolean isWc() {
