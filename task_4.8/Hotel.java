@@ -2,6 +2,7 @@ public class Hotel {
     Room[] rooms;
 
     public Hotel(Room[] rooms) {
+
         this.rooms = rooms;
     }
 
@@ -25,6 +26,7 @@ public class Hotel {
                 break;
             }
         }
+
         System.out.println(info);
     }
 }
