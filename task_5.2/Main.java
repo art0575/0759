@@ -13,11 +13,9 @@
 Абрамовичи */
 
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
-/* 
+/*
 Модернизация ПО
 */
 
@@ -27,20 +25,25 @@ public class Main {
 
         List<String> list = new ArrayList<>();
         while (true) {
+            System.out.println("Введите фамилию: ");
             String family = scanner.nextLine();
-            if (family.isEmpty()) {
-                break;
-            }
-
+            if (family.isEmpty()) { break; }
             list.add(family);
+            System.out.println("Введите город: ");
+            String city = scanner.nextLine();
+            if (city.isEmpty()) { break; }
+            list.add(city);
         }
-
+        System.out.println(list);
         // Read the house number
-        int houseNumber = scanner.nextInt();
-
-        if (0 <= houseNumber && houseNumber < list.size()) {
-            String familyName = list.get(houseNumber);
-            System.out.println(familyName);
+        while (true) {
+            System.out.println("Поиск по городу. Введите город: ");
+            String cityResidence = scanner.nextLine();
+            if (list.contains(cityResidence)) {
+                int a = list.indexOf(cityResidence);
+                System.out.println("В городе: " + list.get(a) + " проживают: " + list.get(a - 1));
+            }else System.out.println("Такого города нет");
+            break;
         }
     }
 }
