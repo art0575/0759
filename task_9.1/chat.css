@@ -1,0 +1,14 @@
+.bg {
+	-fx-background-image: url(https://kpmgakademi.com/Content/Education/05032020_112812394297.png);
+	-fx-background-attachment: fixed;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: contain;
+}
+
+
+.sendbottom {
+	-fx-background-image: url(https://avatars.mds.yandex.net/get-zen_doc/3311877/pub_60056a820cf4a170b95c6baf_60057655fd62ee068995f23d/scale_1200);
+	-fx-background-attachment: fixed;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 28px 28px;
+}
