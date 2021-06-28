@@ -1,8 +1,0 @@
-com/example/quiz/Question.java
- com.example.quiz.Question
-com/example/quiz/MainActivity.java
- com.example.quiz.MainActivity
- com.example.quiz.MainActivity$1
- com.example.quiz.MainActivity$2
-com/example/quiz/BuildConfig.java
- com.example.quiz.BuildConfig
