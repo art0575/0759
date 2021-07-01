@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="question0">День города в Москве празднуется в первую или вторую субботу сентября</string>
+    <string name="question1">"Россия встречает Новый год под бой курантов на Троицкой башне</string>
+    <string name="question2">Первое письменное упоминание о Москве датируется 1147 годом</string>
+    <string name="question3"> Самая длинная столичная улица - ул.Тверская</string>
+    <string name="question4">На Красной площади установлен памятник Юрию Долгорукому</string>
+    <string name="question5">ГУМ был построен в 1893 году</string>
+    <string name="question6">Самая маленькая улица в столице - Ул.Венецианова</string>
+    <string name="question7">День России отмечается 9 мая</string>
+    <string name="question8">Матрешка самая популярная русская игрушка в мире</string>
+    <string name="question9">Границы нашего государства охраняет народ</string>
+    <string name="yesBtn">Да</string>
+    <string name="noBtn">Нет</string>
+    <string name="correct">Правильно</string>
+    <string name="incorrect">Неправильно</string>
+    <string name="help">Подсказка</string>
+    <string name="correctAnswer">Правильный ответ</string>
+    <string name="repeatQuiz">Повторить тест</string>
+    <string name="completeQuiz">Завершить</string>
+</resources>
