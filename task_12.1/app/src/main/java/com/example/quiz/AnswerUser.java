@@ -9,7 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import java.util.HashMap;
+import java.util.*;
 
 
 public class AnswerUser extends AppCompatActivity {
@@ -20,6 +20,7 @@ public class AnswerUser extends AppCompatActivity {
     private String str, str2;
     private String[] u2 = new String[10];
     private String[] u3 = new String[10];
+    private int[] i1 = new int[3];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,20 +39,10 @@ public class AnswerUser extends AppCompatActivity {
                 trueAnswer++;
             }
         }
-        for (int i = 0; i < u2.length; i++) {
-            text.setText(Integer.decode(u2[i]));
-            str = (text.getText().toString());
-            u2[i] = (str + " - " + u3[i] + "\n");
-        }
-        text.setText("");
         text.append("Вы заработали " + String.valueOf(trueAnswer * 10) + " баллов из 100" + "\n" +
                 "Ваши ответы: " + "\n");
-        for (String s : u2)
-            text.append(s);
-        str2 = (text.getText().toString());
-//        text.append(str2);
-        // TextView getString = (TextView)findViewById(R.id.textView);
-
+        for (int i = 0; i < u2.length; i++) {
+            text.append(u2[i]+ " - " + u3[i] + "\n");}
 
         repeatBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,17 +54,16 @@ public class AnswerUser extends AppCompatActivity {
         closeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                finishAffinity();
                 System.exit(0);
             }
         });
     }
 
-
-
-        @Override
-        public void onSaveInstanceState (Bundle savedInstanceState){
-            super.onSaveInstanceState(savedInstanceState);
-            Log.d("SYSTEM INFO", "Метод onSaveInstanceState() запущен");
-        }
+    @Override
+    public void onSaveInstanceState (Bundle savedInstanceState){
+        super.onSaveInstanceState(savedInstanceState);
+        Log.d("SYSTEM INFO", "Метод onSaveInstanceState() запущен");
+    }
 }
 

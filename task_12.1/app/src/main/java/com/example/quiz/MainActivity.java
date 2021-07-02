@@ -115,6 +115,12 @@ public class MainActivity extends AppCompatActivity {
 
         public void Intent (){
             Intent intent = new Intent(MainActivity.this, AnswerUser.class);
+            int[] d=new int[questions.length];
+            for(int i=0;i<questions.length;i++){
+                d[i]=questions[i].getQuestion();
+                text.setText(d[i]);
+                u2[i] = (text.getText().toString());
+            }
             intent.putExtra("u2",u2);
             intent.putExtra("u3",u3);
            startActivity(intent);
