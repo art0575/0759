@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Телефонная книга</string>
+    <string name="addPerson">Добавить человека</string>
+    <string name="addEntry">Добавить запись</string>
+    <string name="personFirstName">Имя</string>
+    <string name="personLastName">Фамилия</string>
+    <string name="personPhone">Номер телефона</string>
+    <string name="editEntry">Редактировать</string>
+    <string name="deleteEntry">Удалить</string>
+</resources>
